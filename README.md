@@ -1,30 +1,38 @@
-# Unidad 01 - Modelos avanzados, reducción dimensional y Green AI
+# Entorno profesional instalado y validado. Unidad 01. Manual laboratorios guiados.
 
 **Asignatura:** INF-8239 Ciencia de Datos II  
+**Unidad:** 01 - Modelos avanzados, reducción dimensional y Green AI  
+
+---
+
+## U01.LAB00 · Preparación y validación del entorno profesional
 **Código:** U01.LAB00  
-**Guía paso a paso · Preparación y validación del entorno profesional**
+**Guía paso a paso:** Preparación y validación del entorno profesional.  
+**Objetivo:** Instalar, preparar y validar el entorno local utilizando `uv` y pruebas automatizadas para garantizar un espacio de trabajo reproducible.
 
-## 1. Objetivo
-[Describe brevemente el objetivo del laboratorio]
-
-## 2. Problema
-[¿Qué problema de ciencia de datos intentas resolver?]
-
-## 3. Fuente de Datos
-[¿De dónde provienen los datos? Incluye un enlace si es posible]
-
-## 4. Instrucciones de Ejecución
-Este proyecto utiliza `uv` como gestor ultrarrápido de paquetes. No es necesario crear entornos virtuales manualmente ni usar archivos de requerimientos.
-
-Para ejecutar los notebooks o las pruebas, utiliza:
-
+**Instrucciones de Ejecución:**
+Este proyecto utiliza `uv` como gestor ultrarrápido de paquetes. Para ejecutar los notebooks o las pruebas, utiliza:
 ```powershell
-# Iniciar Jupyter Notebook
 uv run jupyter notebook
-
-# Ejecutar las pruebas automatizadas
 uv run pytest
 ```
 
-## 5. Resultados Principales
-[Resume aquí las métricas o conclusiones de tu adaptación]
+---
+
+## U01.LAB01 · SVM con pipeline, búsqueda de parámetros y evaluación
+**Código:** U01.LAB01  
+**Guía paso a paso:** SVM con pipeline, búsqueda de parámetros y evaluación.  
+**Resultado Esperado:** Construirás una línea base y una SVM sin fuga; compararás C y gamma mediante validación cruzada y explicarás los errores del modelo.
+
+---
+
+## U01.LAB02 · Búsqueda, selección y auditoría de un dataset público
+**Código:** U01.LAB02  
+**Guía paso a paso:** Ensambles, PCA, t-SNE y selección Green AI.  
+**Resultado Esperado:** Ampliarás el mismo problema del Ejercicio 01 con ensambles, reducción dimensional, mediciones repetidas y una decisión sobre la frontera de Pareto.
+
+### 1. Congelar el Protocolo
+* Reutiliza dataset, target, exclusiones y test del LAB02.
+* No cambies la partición para favorecer un modelo.
+* Declara la métrica principal y la clase prioritaria antes de comparar.
+* Conserva el conjunto de prueba sin tocar hasta el cierre del experimento.
