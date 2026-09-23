@@ -1,0 +1,6 @@
+# Añade aquí las dependencias de tu proyecto (ej. pandas, scikit-learn, matplotlib)
+jupyter
+pandas
+numpy
+matplotlib
+scikit-learn
